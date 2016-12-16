@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../CSS/CSS_Bestand3.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:100,200,400,700,900" rel="stylesheet">
+	<title>Diffie-Helman Key Exchange</title>
+</head>
+<body>
+<header>
+		<h1>Whitfield Diffie</h1>
+		<nav>
+			<ul class="Menu">
+				<li class="dropdown">
+					<a href="index.html">
+						<h4>Home</h4>
+					</a>
+				</li>
+				<li class="dropdown">
+					<h4>Privéleven</h4>
+					<div class="dropdown-content">
+						<a href="HTML_Biografie.html">Biografie</a>
+						<hr>
+						<a href="HTML_Opleidingen.html">Opleidingen</a>
+					</div>
+				</li>
+				<li class="dropdown">
+					<h4>Carrière</h4>
+					<div class="dropdown-content">
+						<a href="HTML_Loopbaan.html">Loopbaan</a>
+						<hr>
+						<a href="HTML_DiffieHelmanKeyExchange.html">Diffie-Helman Key Exchange</a>
+						<hr>
+						<a href="HTML_Filmpjes.html">Video's</a>
+					</div>
+				</li>
+				<li class="dropdown">
+					<h4>Awards</h4>
+					<div class="dropdown-content">
+						<a href="HTML_WinstAlanTuring.html">Winst Alan Turing</a>
+						<hr>
+						<a href="HTML_AlanTuringAward.html">Alan Turing Award</a>
+						<hr>
+						<a href="HTML_AndereAwards.html">Andere Awards</a>
+					</div>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<div class="content">
+		<h2>Diffie-Helman Key Exchange</h2>
+		<article>
+			<h3>Korte inleiding</h3>
+				<p>De Diffie Hellman key exchange is een cryptografisch beveiligingsprotocol ontwikkeld door Whitfield Diffie en Martin Hellman in 1976. Dit protocol zorgt ervoor dat twee deelnemers over een onbeveiligd kanaal een geheime encryptiesleutel kunnen uitwisselen die daarna gebruikt kan worden om de communicatie tussen de deelnemers te versleutelen. Wanneer er een bericht tussen de deelnemers wordt onderschept, kan de onderscheppers niks met de informatie aangezien die de encryptiesleutel niet heeft.</p>
+			<h3>Uitleg</h3>
+			<img alt="Uitleg Key Exchange"  src="../Media/Foto/KeyExchange.png" width="400" height="240">
+				<ol>
+					<li>  Deelnemer A bedenkt een priemgetal p en een basisgetal g.</li>
+					<li>  Deelnemer A verzint een geheim getal a. Vervolgens berekent ze op basis van a, p en g het getal A.</br><span style="font-weight: bold">A = g<sup>a</sup> mop p</li></span></li>
+					<li>  Deelnemer A verstuurt p, g en A naar Deelnemer B.</li>
+					<li>  Deelnemer B verzint ook een geheim getal b en berekent op basis van de ontvangen p en g op dezelfde manier het getal B dat hij naar Deelnemer A stuurt.</br><span style="font-weight: bold">B = g<sup>b</sup> mop p</li></span></li>
+					<li>  Deelnemer B berekent op basis van A, b en p het gemeenschappelijke geheime getal K.</br><span style="font-weight: bold">K = A<sup>b</sup> mod p</span></li>
+					<li>  Deelnemer A berekent eveneens het gemeenschappelijke geheime getal K, maar dan op basis van B, a en p.<br><span style="font-weight: bold">K = B<sup>a</sup> mod p</span></li>
+				</ol>
+				<p>De getallen p, g, A en B zijn publiek, wat wil zeggen dat iedereen die meeluistert, deze getallen kan onderscheppen. Maar het gemeenschappelijke getal dat Deelnemer A en Deelnemer B hebben berekend, is geheim, want om dat te berekenen is a of b nodig. Dit getal kunnen ze dus gebruiken om hun berichten naar elkaar toe te versleutelen. Voor een buitenstaander is het zeer moeilijk om de geheime sleutel ("key") K te achterhalen zonder a of b, want er zijn namelijk vele manieren om met p en g tot A of B te komen.</p>
+		</article>
+	</div>
+	<footer>
+		Niels Swinkels & Max van der Waal<br>
+		BV4D<br>
+		Informatica PO-Webdesign 2016
+	</footer>
+</body>
+</html>
