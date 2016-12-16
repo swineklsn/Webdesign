@@ -1,0 +1,180 @@
+h1{
+	font-family: 'Raleway', sans-serif;
+	font-size: 35px;
+	color: rgb(247, 180, 110);
+	margin: 0 5px 5px 5px;
+}
+h2{
+	font-family: 'Raleway', sans-serif;
+	font-size: 30px;
+	padding-top: 0px;
+}
+h3{
+	font-family: 'Raleway', sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+}
+h4{
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	color: rgb(247, 180, 110);
+	margin: 5px 5px 5px 5px;
+}
+p{
+	font-family: 'Raleway', sans-serif;
+	font-size: 15px;
+}
+	/*
+	h1 = whitfield diffie*
+	h2 = h-inleidingen & pagina namen
+	h3 = kopjes boven paragraaf
+	h4 = h-dropdown
+	*/
+
+
+
+
+	
+/*pagina onderdelen*/
+header{
+	text-align: center;
+	width: 100%;
+	background-color: rgb(0, 82, 109);
+	margin: 0px;
+}
+nav{
+	text-align: center;
+	border-top: 5px solid rgb(242,235,215);
+	border-left: 5px solid rgb(242,235,215);
+	border-right: 5px solid rgb(242,235,215);
+}
+
+body{
+	font-family: 'Raleway', sans-serif;
+	background-color: rgb(242,235,215);
+	margin: 0;
+	padding: 0;
+}
+section{
+	background-color: rgb(242,235,215);
+}
+.content{
+	width: 65%;
+	height: 700px;
+	border: 2px solid rgb(0, 82, 109);
+	margin: auto;
+	margin-top: 10px;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
+	padding-bottom: 20px;
+	overflow: hidden;
+
+}
+.content:hover{
+	overflow:auto;
+}
+
+footer{
+	font-family: 'Raleway', sans-serif;
+	color: rgb(242,235,196);
+	background-color: rgb(0, 82, 109);
+	height: 50px;
+	width: 100%;
+	border-top: 5px solid rgb(242,235,215);
+	padding: 10px;
+	position: fixed;
+	bottom:0px;
+	left:0px;
+}
+
+
+
+
+
+/*inleidingen*/
+.inleidingen{
+	text-align: center;
+	width: 30%;
+	float: left;
+	margin-left: 1.5%;
+	margin-right: 1.5%;
+}
+.pictures{
+	width: 35%;
+	border-radius: 360px;
+	margin-top: 10px;
+}
+
+
+
+
+
+/*links*/
+a{
+	font-family: arial;
+	color: rgb(247, 180, 110);
+	text-decoration: none;
+}
+a:visited{
+	font-family: arial;
+	color: rgb(247, 180, 110);
+	text-decoration: none;
+}
+
+
+
+
+
+/*formulier*/
+.beoordeling{
+	height: 50px;
+	width: 50%;
+}
+.formulier{
+	font-family: arial;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+
+
+/*pictures*/
+div.polaroid {
+	width: 460px;
+	background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	float:right;
+}
+
+div.container {
+	text-align: center;
+	padding: 10px 20px;
+}
+
+
+/*menu onderdelen*/
+.Menu{
+	list-style-type: none;
+}
+.dropdown{
+	text-align: center;
+	width: 20%;
+	position: relative;
+	display: inline-block;
+}
+.dropdown-content{
+	display: none;
+	position: absolute;
+	min-width: 100%;
+	padding: 12px 16px;
+	border-left: 2px solid white;
+	border-right: 2px solid white;
+	border-bottom: 2px solid white;
+	z-index: 1;
+	font-size: 17px;
+}
+.dropdown:hover .dropdown-content{
+	display: block;
+	background-color: rgb(0, 82, 109);
+}
